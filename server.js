@@ -37,8 +37,17 @@ app.use(express.json());// returns middleware that only parses JSON - may or may
 //use method override
 app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
-// Routes
-//___________________
+// Controllers
+const gunsController = require('./controllers/guns_controller.js')
+app.use('/fruits', fruitsController)
+const userController = require('./controllers/users_controller.js')
+app.use('/users', userController)
+const sessionsController = require('./controllers/sessions_controller.js')
+app.use('/sessions', sessionsController)
+app.get('/', (req, res) => {
+  res.redirect('/home')
+})
+//________________
 //localhost:3000
 app.get('/' , (req, res) => {
   res.send('Hello World!');
