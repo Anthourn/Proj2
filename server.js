@@ -39,19 +39,19 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 //___________________
 // Controllers
 const gunsController = require('./controllers/guns_controller.js')
-app.use('/fruits', fruitsController)
-const userController = require('./controllers/users_controller.js')
-app.use('/users', userController)
-const sessionsController = require('./controllers/sessions_controller.js')
-app.use('/sessions', sessionsController)
+app.use('/guns', gunsController)
+// const userController = require('./controllers/users_controller.js')
+// app.use('/users', userController)
+// const sessionsController = require('./controllers/sessions_controller.js')
+// app.use('/sessions', sessionsController)
 app.get('/', (req, res) => {
-  res.redirect('/home')
+  res.redirect('/guns')
 })
 //________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
-});
+// app.get('/' , (req, res) => {
+//   res.send('Hello World!');
+// });
 //___________________
 //Listener
 //___________________

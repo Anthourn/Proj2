@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div class="">
+            <h1> Apex Guns Database</h1>
+            <div class="">
+                <ul>
+                    <% for (let gun of guns) { %>
+                        <li>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>
