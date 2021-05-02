@@ -171,7 +171,150 @@ guns.get('/setup/seed',(req,res) => {
         },
         {
             name:'R-301 Carbine',
-            description:'Full-auto with high accuracy'
+            description:'Full-auto with high accuracy',
+            class:'AR',
+            ammo:'Light',
+            fireRate:13.5,
+            damage:14,
+            dps:189,
+            adsSpeed:50,
+            reloadTime:3.2,
+            recoil:'vertical, right curve'
+
+        },
+        {
+            name:'Alternator',
+            description:'twin barrel full auto',
+            class:'SMG',
+            ammo:'Light',
+            fireRate:6,
+            damage:16,
+            dps:160,
+            adsSpeed:85,
+            reloadTime:2.23,
+            recoil:'vertical'
+        },
+        {
+            name:'R-99',
+            description:'Rapid-fire automatic SMG',
+            class:'SMG',
+            ammo:'Light',
+            fireRate:18,
+            damage:11,
+            dps:198,
+            adsSpeed:85,
+            reloadTime:2.45,
+            recoil:'Vertical plus right curve'
+
+        },
+        {
+            name:'Volt',
+            description:'Energy actuated SMG',
+            class:'SMG',
+            ammo:'Energy',
+            fireRate: 12,
+            damage:15,
+            dps: 180,
+            adsSpeed: 85,
+            reloadTime:2.25,
+            recoil: 'minor'
+        },
+        {
+            name:'Prowler',
+            description:'5-round burst SMG',
+            class:'SMG',
+            ammo:'Special Heavy',
+            fireRate:13.25,
+            damage:15,
+            dps:199,
+            adsSpeed: 85,
+            reloadTime:2.6,
+            recoil:'Kick and vertical with left curve'
+        },
+        {
+            name:'RE-45',
+            description:'full auto pistol',
+            class: 'Pistol',
+            ammo:'Light',
+            fireRate: 13,
+            damage: 12,
+            dps: 150,
+            adsSpeed:95,
+            reloadTime:1.95,
+            recoil:'Hard curve right'
+        },
+        {
+            name:'P2020',
+            description:'semi auto pistol',
+            class:'Pistol',
+            ammo:'Light',
+            fireRate:'8.5',
+            damage:15,
+            dps:107,
+            adsSpeed:100,
+            reloadTime:1.25,
+            recoil:'vertical'
+        },
+        {
+            name:'Wingman',
+            description:'High powered revolver',
+            class:'Pistol',
+            ammo:'Heavy',
+            fireRate:2.6,
+            damage:45,
+            dps:117,
+            adsSpeed:100,
+            reloadTime:2.1,
+            recoil:'vertical'
+
+        },
+        {
+            name:'EVA-8 Auto',
+            description:'Description',
+            class:'Shotgun',
+            ammo:'Shotgun',
+            fireRate: 2.1,
+            damage:63,
+            dps: 132,
+            adsSpeed:90,
+            reloadTime:3,
+            recoil:'N/A'
+        },
+        {
+            name:'Mastiff',
+            description:'Powerful semi-auto shotgun',
+            class:'Shotgun',
+            ammo:'Shotgun',
+            fireRate:1.1,
+            damage:88,
+            dps:88,
+            adsSpeed:90,
+            reloadTime:6.5,
+            recoil:'N/A'
+        },
+        {
+            name:'Peacekeeper',
+            description:'Lever-action shotgun',
+            class:'Shotgun',
+            ammo:'Special Shotgun',
+            fireRate:.96,
+            damage:110,
+            dps:110,
+            adsSpeed:90,
+            reloadTime:3.35,
+            recoil:'N/A'
+        },
+        {
+            name:'Mozambique',
+            description:'Triple-barrel shotgun pistol',
+            class:'Shotgun',
+            ammo:'Shotgun',
+            fireRate:2.2,
+            damage: 45,
+            dps:99,
+            adsSpeed:100,
+            reloadTime:2.6,
+            recoil:'N/A'
         }
     ])
 })
