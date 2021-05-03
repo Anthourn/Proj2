@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <h1> <%= gun.name%></h1>
+        <div class="">
+            <table>
+                <tr>
+                    <th>Stats</th>
+                </tr>
+                <tr>
+                    <td>Class</td>
+                    <td><%=gun.class%></td>
+                </tr>
+                <tr>
+                    <td>Ammo Type</td>
+                    <td><%=gun.ammo%> Rounds</td>
+                </tr>
+                <tr>
+                    <td>Fire Rate</td>
+                    <td><%=gun.fireRate%> shots per second</td>
+                </tr>
+                <tr>
+                    <td>Damage</td>
+                    <td> <%=gun.damage%> </td>
+                </tr>
+                <tr>
+                    <td>DPS</td>
+                    <td><%=gun.dps%></td>
+                </tr>
+                <tr>
+                    <td>ADS Speed</td>
+                    <td><%=gun.adsSpeed%>%</td>
+                </tr>
+                <tr>
+                    <td>Reload Time</td>
+                    <td><%=gun.reloadTime%> seconds</td>
+                </tr>
+                <tr>
+                    <td>Recoil Pattern</td>
+                    <td><%=gun.recoil%></td>
+                </tr>
+
+            </table>
+            <img src="<%=gun.img%>" alt="">
+        </div>
+        <div class="">
+
+        </div>
+
+        <a href="/guns/<%=gun.id%>/edit">Edit</a>
+        <form action="/guns/<%=gun._id%>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE"/>
+      </form>
+    </body>
+</html>

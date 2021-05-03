@@ -11,6 +11,7 @@ const gunSchema = new mongoose.Schema({
     adsSpeed:{type: Number, required: true},
     reloadTime:{type:Number, required:true},
     recoil:{type:String, required: true},
+    img:{type:String}
 
 
 })
