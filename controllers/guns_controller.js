@@ -9,7 +9,7 @@ const isAuthenticated = (req,res, next) => {
         res.redirect('/sessions/new')
     }
 }
-SEED
+// SEED
 guns.get('/setup/seed',(req,res) => {
     Gun.create([
         {
