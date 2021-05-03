@@ -4,7 +4,13 @@
         <%- include ('../partials/head.ejs') %>
     </head>
     <body class = 'has-background-grey-lighter'>
-        <h1> <%= gun.name%></h1>
+        <section class = 'hero is-small is-primary'>
+            <div class="hero-body">
+                <p class = title><%= gun.name%></p>
+                <pclass = 'subtitle'><%= gun.description%></p>
+            </div>
+        </section>
+        <h1> </h1>
         <br>
         <div class=" columns">
             <table class = 'table is-hoverable column has-background-grey-lighter'>
