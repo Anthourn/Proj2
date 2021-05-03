@@ -1,25 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <%- include ('../partials/head.ejs') %>
     </head>
     <body>
         <div class="">
             <h1> Apex Guns Database</h1>
             <% if (logIn) {%>
                 <a href="/guns/new">New Gun</a>
-                
+
                 <form class="" action="/sessions?_method=DELETE" method="post">
                     <input type="submit" name="" value="Log out">
                 </form>
             <%}%>
-            <div class="">
-                <ul>
+            <div class="columns">
+
+                <ul class = 'column'>
+                    <h2>Sniper Rifles</h2>
                     <% for (let gun of guns) { %>
-                        <li>
+                        <%if(gun.class ==='Sniper'){ %>
+                        <li class = ''>
                             <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
                         </li>
+                    <%}%>
+                    <% } %>
+                </ul>
+                <ul class = 'column'>
+                    <h2>Assualt Rifles</h2>
+                    <% for (let gun of guns) { %>
+                        <%if(gun.class ==='AR'){ %>
+                        <li class = ''>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <%}%>
+                    <% } %>
+                </ul>
+                <ul class = 'column'>
+                    <h2>Light Machine Guns</h2>
+                    <% for (let gun of guns) { %>
+                        <%if(gun.class ==='LMG'){ %>
+                        <li class = ''>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <%}%>
+                    <% } %>
+                </ul>
+                <ul class = 'column'>
+                    <h2>SMGs</h2>
+                    <% for (let gun of guns) { %>
+                        <%if(gun.class ==='SMG'){ %>
+                        <li class = ''>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <%}%>
+                    <% } %>
+                </ul>
+                <ul class = 'column'>
+                    <h2>Pistols</h2>
+                    <% for (let gun of guns) { %>
+                        <%if(gun.class ==='Pistol'){ %>
+                        <li class = ''>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <%}%>
+                    <% } %>
+                </ul>
+                <ul class = 'column'>
+                    <h2>Shotguns</h2>
+                    <% for (let gun of guns) { %>
+                        <%if(gun.class ==='Shotgun'){ %>
+                        <li class = ''>
+                            <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                        </li>
+                    <%}%>
                     <% } %>
                 </ul>
             </div>

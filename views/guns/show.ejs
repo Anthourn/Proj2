@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title></title>
+        <%- include ('../partials/head.ejs') %>
     </head>
-    <body>
+    <body class = 'has-background-grey-lighter'>
         <h1> <%= gun.name%></h1>
-        <div class="">
-            <table>
+        <br>
+        <div class=" columns">
+            <table class = 'table is-hoverable column has-background-grey-lighter'>
                 <tr>
                     <th>Stats</th>
                 </tr>
@@ -45,7 +45,7 @@
                 </tr>
 
             </table>
-            <img src="<%=gun.img%>" alt="">
+            <img class = column src="<%=gun.img%>" alt="">
         </div>
         <div class="">
 
