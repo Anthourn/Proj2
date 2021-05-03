@@ -18,7 +18,7 @@ sessions.post('/', (req,res) => {
         } else if (!foundUser){
             res.send('<a href='/'> Unauthorized, back to home</a>')
         } else{
-            if(bcrypt.compareSync(req.body.password, foundUser.password) && req.body.username === 'Troy') {
+            if(bcrypt.compareSync(req.body.password, foundUser.password)) {
                 req.session.currentUser = foundUser
                 console.log(req)
                 res.redirect('/')
