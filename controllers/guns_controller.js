@@ -370,7 +370,7 @@ guns.get('/',(req,res) => {
     Gun.find({},(error, allGuns) => {
         res.render('guns/index.ejs', {
             guns: allGuns,
-            // currentUser: req.session.currentUser
+            logIn:req.session.currentUser
         })
     })
 })
@@ -379,7 +379,8 @@ guns.get('/',(req,res) => {
 guns.get('/:id', (req,res) => {
     Gun.findById(req.params.id, (err, foundGun) => {
         res.render('guns/show.ejs', {
-            gun:foundGun
+            gun:foundGun,
+            logIn:req.session.currentUser
         })
     })
 })

@@ -7,6 +7,9 @@
     <body>
         <div class="">
             <h1> Apex Guns Database</h1>
+            <% if (logIn) {%>
+                <a href="/guns/new">New Gun</a>
+            <%}%>
             <div class="">
                 <ul>
                     <% for (let gun of guns) { %>
