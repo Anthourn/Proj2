@@ -9,6 +9,10 @@
             <h1> Apex Guns Database</h1>
             <% if (logIn) {%>
                 <a href="/guns/new">New Gun</a>
+                
+                <form class="" action="/sessions?_method=DELETE" method="post">
+                    <input type="submit" name="" value="Log out">
+                </form>
             <%}%>
             <div class="">
                 <ul>
