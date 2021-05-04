@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+
+    <%- include ('../partials/head.ejs') %>
+    </head>
+    <body>
+        <section class = 'hero is-small is-primary'>
+            <div class="hero-body">
+                <p class = title><%= ammo%> rounds</p>
+
+            </div>
+        </section>
+        <div class="">
+            <% for (let gun of guns) { %>
+                <li class = ''>
+                    <a href="/guns/<%=gun._id%>"> <%= gun.name %></a>
+                </li>
+            <%}%>
+
+        </div>
+        <footer>
+        <%- include ('../partials/footer.ejs') %>
+        </footer>
+    </body>
+</html>

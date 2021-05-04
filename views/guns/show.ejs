@@ -7,7 +7,7 @@
         <section class = 'hero is-small is-primary'>
             <div class="hero-body">
                 <p class = title><%= gun.name%></p>
-                <pclass = 'subtitle'><%= gun.description%></p>
+                <p class = 'subtitle'><%= gun.description%></p>
             </div>
         </section>
         <h1> </h1>
@@ -56,10 +56,15 @@
         <div class="">
 
         </div>
-        <% if (logIn){ %><a href="/guns/<%=gun.id%>/edit">Edit</a>
+        <% if (logIn){ %><a class = "button is-primary" href="/guns/<%=gun.id%>/edit">Edit</a>
         <form action="/guns/<%=gun._id%>?_method=DELETE" method="POST">
-        <input type="submit" value="DELETE"/>
+        <input class = "button is-danger" type="submit" value="DELETE"/>
     </form> <%}%>
 
     </body>
+    <footer class = "footer has-background-grey-lighter">
+
+    <a class = "has-background-grey-lighter" href="/guns/ammo/<%=gun.ammo%>">Other <%=gun.ammo%> guns</a>
+    <%- include ('../partials/footer.ejs') %>
+    </footer>
 </html>

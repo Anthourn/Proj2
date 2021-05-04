@@ -5,7 +5,11 @@
     </head>
     <body>
         <div class="">
-            <h1> Apex Guns Database</h1>
+            <section class = 'hero is-small is-primary'>
+                <div class="hero-body">
+                    <p class = title> Apex Gun Check</p>
+                </div>
+            </section>
             <% if (logIn) {%>
                 <a href="/guns/new">New Gun</a>
 
@@ -16,7 +20,7 @@
             <div class="columns">
 
                 <ul class = 'column'>
-                    <h2>Sniper Rifles</h2>
+                    <h2 class = 'has-text-weight-bold'>Sniper Rifles</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='Sniper'){ %>
                         <li class = ''>
@@ -26,7 +30,7 @@
                     <% } %>
                 </ul>
                 <ul class = 'column'>
-                    <h2>Assualt Rifles</h2>
+                    <h2 class = 'has-text-weight-bold'>Assualt Rifles</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='AR'){ %>
                         <li class = ''>
@@ -36,7 +40,7 @@
                     <% } %>
                 </ul>
                 <ul class = 'column'>
-                    <h2>Light Machine Guns</h2>
+                    <h2 class = 'has-text-weight-bold'>Light Machine Guns</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='LMG'){ %>
                         <li class = ''>
@@ -46,7 +50,7 @@
                     <% } %>
                 </ul>
                 <ul class = 'column'>
-                    <h2>SMGs</h2>
+                    <h2 class = 'has-text-weight-bold'>SMGs</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='SMG'){ %>
                         <li class = ''>
@@ -56,7 +60,7 @@
                     <% } %>
                 </ul>
                 <ul class = 'column'>
-                    <h2>Pistols</h2>
+                    <h2 class = 'has-text-weight-bold'>Pistols</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='Pistol'){ %>
                         <li class = ''>
@@ -66,7 +70,7 @@
                     <% } %>
                 </ul>
                 <ul class = 'column'>
-                    <h2>Shotguns</h2>
+                    <h2 class = 'has-text-weight-bold'>Shotguns</h2>
                     <% for (let gun of guns) { %>
                         <%if(gun.class ==='Shotgun'){ %>
                         <li class = ''>
@@ -78,5 +82,6 @@
             </div>
 
         </div>
+    <a class = "button is-primary" href="/sessions/new">Log in</a>
     </body>
 </html>

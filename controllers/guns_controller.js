@@ -383,6 +383,16 @@ guns.get('/:id', (req,res) => {
             logIn:req.session.currentUser
         })
     })
+
+})
+guns.get('/ammo/:ammo',(req,res) => {
+    Gun.find({'ammo':req.params.ammo}, (err,foundGun) => {
+        res.render('guns/ammo.ejs',
+        {
+            guns:foundGun,
+            ammo:req.params.ammo
+        })
+    })
 })
 //Create
 guns.post('/',(req,res) => {
