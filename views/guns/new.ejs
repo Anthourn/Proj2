@@ -6,19 +6,29 @@
     <body>
         <h1>New Gun</h1>
         <div class="">
-            <form class="" action="/guns" method="POST">
-                Name:<input type="text" name="name" value="">
-                Description:<input type="text" name="description" value="">
-                Class:<input type="text" name="class" value="">
-                Ammo:<input type="text" name="ammo" value="">
-                Fire Rate:<input type="number" name="fireRate" value="">
-                Damage:<input type="number" name="damage" value="">
-                DPS:<input type="number" name="dps" value="">
-                ADS Speed:<input type="number" name="adsSpeed" value="">
-                Reload time:<input type="number" name="reloadTime" value="">
-                Recoil Pattern:<input type="text" name="recoil" value="">
-                Image:<input type="text" name="img" value="">
-                <input type="submit"  >
+            <form class="colums" action="/guns" method="POST">
+                Name:<input class = column type="text" name="name" value="">
+                <br>
+                Description:<input class = column type="text" name="description" value="">
+                <br>
+                Class:<input class = column type="text" name="class" value="">
+                <br>
+                Ammo:<input class = column type="text" name="ammo" value="">
+                <br>
+                Fire Rate:<input class = column type="number" name="fireRate" value="">
+                <br>
+                Damage:<input class = column type="number" name="damage" value="">
+                <br>
+                DPS:<input class = column type="number" name="dps" value="">
+                <br>
+                ADS Speed:<input class = column type="number" name="adsSpeed" value="">
+                <br>
+                Reload time:<input class = column type="number" name="reloadTime" value="">
+                <br>
+                Recoil Pattern:<input class = column type="text" name="recoil" value="">
+                <br>
+                Image:<input class = column type="text" name="img" value="">
+                <input class = 'button is-success' type="submit"  >
             </form>
         </div>
         <%- include ('../partials/footer.ejs') %>

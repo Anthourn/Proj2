@@ -11,10 +11,10 @@
                 </div>
             </section>
             <% if (logIn) {%>
-                <a href="/guns/new">New Gun</a>
+                <a class = 'button is-link' href="/guns/new">New Gun</a>
 
                 <form class="" action="/sessions?_method=DELETE" method="post">
-                    <input type="submit" name="" value="Log out">
+                    <input class = 'button is-warning' type="submit" name="" value="Log out">
                 </form>
             <%}%>
             <div class="columns">
@@ -82,6 +82,8 @@
             </div>
 
         </div>
+        <%if(!logIn){%>
     <a class = "button is-primary" href="/sessions/new">Log in</a>
+    <%}%>
     </body>
 </html>
